@@ -4,73 +4,62 @@
 }
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
-	background: #e6ffff;
-	color: white;
-	line-height: 1.6;
-	height: 100vh;
-	overflow: hidden;
+	font-family: Arial, Helvetica, sans-serif!important;
+	background: black!important;
+	color: white!important;
+	line-height: 1.6!important;
+	height: 100vh!important;
+	overflow: hidden!important;
 }
 
 .container {
-	width: 100%;
-	height: 100%;
-
-	/* CSS smooth scroll properties */
-	overflow-y: scroll;
-	scroll-behavior: smooth;
+	width: 100%!important;
+	height: 100%!important;
 	scroll-snap-type: y mandatory;
 }
 
 .navbar {
-	position: fixed;
-	top: 0;
-	z-index: 1;
-	display: flex;
-	width: 100%;
-	height: 60px;
-	background: rgba(0,0,0,0.7);
+	z-index: 1!important;
+	height: 60px!important;
+	background-color: rgba(0,0,0,0.7)!important;
 }
 
 .navbar ul {
-	display: flex;
-	list-style: none;
-	width: 100%;
-	justify-content: center;
+	list-style: none!important;
 }
 
 .navbar ul li {
-	margin: 0 1rem;
-	padding: 1rem;
+	margin: 0 1rem!important;
+    padding: 1rem!important;
 }
 
-.navbar ul li a {
-	text-decoration: none;
+.navbar ul li a{
+transition: color 0.75s ease;
+	color: white!important;
 	text-transform: uppercase;
-	color: #f4f4f4;
 }
 
 .navbar ul li a:hover{
-	color: skyblue;
+	transition: color 0.75s ease;
+    color: skyblue!important;
 }
 
 section {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	width: 100%;
-	height: 100vh;
-	scroll-snap-align: center;
+	display: flex!important;
+	flex-direction: column!important;
+	align-items: center!important;
+	justify-content: center!important;
+	text-align: center!important;
+	width: 100%!important;
+	height: 100vh!important;
 }
 
 section h1 {
-	font-size: 4rem;
+	font-size: 4rem!important;
 }
 
 section p {
-	font-size: 1.5rem;
+	font-size: 1.5rem!important;
 }
 
 section#home{
@@ -96,4 +85,3 @@ section#work {
 section#contact {
   background: url('https://source.unsplash.com/bZZp1PmHI0E/1600x900') no-repeat center center/cover;
 }
-
