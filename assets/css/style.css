@@ -13,15 +13,20 @@ body {
 }
 
 .container {
-	width: 100%!important;
-	height: 100%!important;
-	scroll-snap-type: y mandatory;
+	width: 100vw!important;
+	height: 100vh!important;
 }
 
 .navbar {
 	z-index: 1!important;
 	height: 60px!important;
 	background-color: rgba(0,0,0,0.7)!important;
+}
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
 }
 
 .navbar ul {
@@ -55,14 +60,45 @@ section {
 }
 
 section h1 {
-	font-size: 4rem!important;
+	font-size: 2rem!important;
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+	section h1 {
+		font-size: 5vw;
+	}
+
+	section p {
+    	font-size: 3vw;
+    }
+}
+
 
 section p {
 	font-size: 1.5rem!important;
 }
 
 section#home{
+	background: black;
+}
+
+section#about{
+	background: grey;
+}
+
+section#resume {
+  background: black;
+}
+
+section#work {
+  background: grey;
+}
+
+section#contact {
+	background: black;
+}
+
+/*section#home{
 	 background: url('https://source.unsplash.com/bZZp1PmHI0E/1600x900') no-repeat center center/cover;
 }
 
@@ -84,4 +120,4 @@ section#work {
 
 section#contact {
   background: url('https://source.unsplash.com/bZZp1PmHI0E/1600x900') no-repeat center center/cover;
-}
+}*/
