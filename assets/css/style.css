@@ -12,10 +12,10 @@ body {
 	overflow: hidden!important;
 }
 
-.container {
+/*.container {
 	width: 100vw!important;
 	height: 100vh!important;
-}
+}*/
 
 .navbar {
 	z-index: 1!important;
@@ -60,23 +60,27 @@ section {
 }
 
 section h1 {
-	font-size: 2rem!important;
+	font-size: 5vh!important;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-	section h1 {
-		font-size: 5vw;
+section p {
+	font-size: 2.5vh!important;
+}
+
+@media (min-width: 320px) and (max-width: 739px){
+
+	section {
+		height: 100vh!important;
 	}
 
+	section h1 {
+		font-size: 7vw!important;
+	}
 	section p {
-    	font-size: 3vw;
+    	font-size: 4vw!important;
     }
 }
 
-
-section p {
-	font-size: 1.5rem!important;
-}
 
 section#home{
 	background: black;
