@@ -50,11 +50,16 @@ transition: color 0.75s ease;
 }
 
 section {
+	padding-right: 5vw;
+    padding-left: 5vw;
+    margin-right: auto;
+    margin-left: auto;
 	display: flex!important;
 	flex-direction: column!important;
 	align-items: center!important;
 	justify-content: center!important;
-	text-align: center!important;
+	text-align: justify;
+    text-justify: inter-word;
 	width: 100%!important;
 	height: 100vh!important;
 }
@@ -88,9 +93,6 @@ section p {
         transform: translatex(0)!important;
     }
 
-	section {
-		height: 100vh!important;
-	}
 
 	section h1 {
 		font-size: 7vw!important;
