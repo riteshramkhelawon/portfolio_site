@@ -83,7 +83,7 @@ section p {
 	}
 
 	.openMenu {
-		background: rgba(0,0,0,0.9)!important;
+		background: black!important;
 		transition: all ease 0.5s;
         transform: translatex(0)!important;
     }
