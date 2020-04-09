@@ -9,7 +9,7 @@ body {
 	color: white!important;
 	line-height: 1.6!important;
 	height: 100vh!important;
-	overflow: hidden!important;
+	/*overflow: hidden!important;*/
 }
 
 /*.container {
@@ -20,7 +20,7 @@ body {
 .navbar {
 	z-index: 1!important;
 	height: 60px!important;
-	background-color: rgba(0,0,0,0.7)!important;
+	background-color: rgba(0,0,0,1)!important;
 }
 
 .navbar-nav.navbar-center {
@@ -112,6 +112,7 @@ section p {
 
 
 section#home{
+	padding-top: 35px!important;
 	background: black;
 }
 
