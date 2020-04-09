@@ -68,6 +68,25 @@ section p {
 }
 
 @media (min-width: 320px) and (max-width: 739px){
+	.navbar-toggler {
+		z-index: 99999;
+	}
+
+	.mobileMenu {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		transform: translatex(-100%);
+		transition: all ease 0.5s;
+	}
+
+	.openMenu {
+		background: rgba(0,0,0,0.9)!important;
+		transition: all ease 0.5s;
+        transform: translatex(0)!important;
+    }
 
 	section {
 		height: 100vh!important;
