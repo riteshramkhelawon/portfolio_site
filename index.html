@@ -108,11 +108,88 @@
                 <h1>GET IN TOUCH!</h1>
                 <p class="text-center w-responsive mx-auto mb-2">Have any questions? Please do not hesitate to contact me
                     directly. I'll get back to you ASAP!</p>
+                <form class="mt-5 container form-group" id="contact-form" action="https://formspree.io/xpzjwpor"
+                      method="POST">
+                    <div class="container row pr-0">
+                        <div class="col-lg-6">
+                            <label class="form-control border-0"  for="name"><strong>Your name:</strong></label>
+                            <input class="form-control" type="text" id="name" name="name" placeholder="Enter your name" required />
+                        </div>
+                        <div class="col-lg-6 pr-0">
+                            <label class="form-control border-0"  for="email"><strong>Your e-mail address:</strong></label>
+                            <input class="form-control" type="email" id="email" name="email" placeholder="Enter your email address" required />
+                        </div>
+                    </div>
+                    <br>
+                    <div class="container">
+                        <label class="form-control border-0"  for="subject"><strong>Subject:</strong></label>
+                        <input class="form-control" type="text" id="subject" name="subject" placeholder="Enter the subject of your message" required />
+                    </div>
+                    <br>
+                    <div class="container">
+                        <label class="form-control border-0"  for="message"><strong>Message:</strong></label>
+                        <textarea class="container form-control" type="text" id="message" name="message" rows="2" placeholder="Enter your message" required></textarea>
+                        <br>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-success" id="send-message-btn">Send Message</button>
+                    </div>
+                    <div id="my-form-status" style="display: none;" role="alert"></div>
+                </form>
             </section>
         </div>
         </div>
-
-
     <script src="assets/javascript/main.js"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", function() {
+
+        // get the form elements defined in your form HTML above
+
+        var form = document.getElementById("contact-form");
+        var button = document.getElementById("send-message-btn");
+        var status = document.getElementById("my-form-status");
+
+        // Success and Error functions for after the form is submitted
+
+        function success() {
+          form.reset();
+          button.style = "display: none ";
+          status.style = "display: block ";
+          status.classList.add("alert", "alert-success", "text-center");
+          status.innerHTML = "Thanks for your message. I'll get back to you ASAP!";
+        }
+
+        function error() {
+          status.style = "display: block ";
+          status.classList.add("alert", "alert-danger", "text-center");
+          status.innerHTML = "Oops! There was a problem sending your message.";
+        }
+
+        // handle the form submission event
+
+        form.addEventListener("submit", function(ev) {
+          ev.preventDefault();
+          var data = new FormData(form);
+          ajax(form.method, form.action, data, success, error);
+        });
+        });
+
+        // helper function for sending an AJAX request
+
+        function ajax(method, url, data, success, error) {
+        var xhr = new XMLHttpRequest();
+        xhr.open(method, url);
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState !== XMLHttpRequest.DONE) return;
+          if (xhr.status === 200) {
+            success(xhr.response, xhr.responseType);
+          } else {
+            error(xhr.status, xhr.response, xhr.responseType);
+          }
+        };
+        xhr.send(data);
+        }
+    </script>
 </body>
 </html>
