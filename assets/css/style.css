@@ -12,6 +12,14 @@ body {
 	/*overflow: hidden!important;*/
 }
 
+section h1 {
+	font-size: 5vh!important;
+}
+
+section p {
+	font-size: 2.5vh!important;
+}
+
 /*.container {
 	width: 100vw!important;
 	height: 100vh!important;
@@ -51,43 +59,9 @@ transition: color 0.75s ease;
 }
 
 
-/*MEDIA QUERIES*/
-@media (min-width: 320px) and (max-width: 1023px){
-	#home img {
-		display: none!important;
-	}
-
-	.navbar-toggler {
-		z-index: 99999!important;
-	}
-
-	.mobileMenu {
-		position: fixed!important;
-		top: 0!important;
-		bottom: 0!important;
-		left: 0!important;
-		margin: auto!important;
-		transform: translatex(-100%)!important;
-		transition: all ease 0.5s!important;
-	}
-
-	.openMenu {
-		background: black!important;
-		transition: all ease 0.5s!important;
-        transform: translatex(0)!important;
-    }
-
-	#profile-symbols {
-		width: 90vw!important;
-		text-align: center;
-	}
-
-	section h1 {
-		font-size: 7vw!important;
-	}
-	section p {
-    	font-size: 4vw!important;
-    }
+/*ABOUT SECTION STYLING*/
+#profile-symbols {
+	width: 15vw!important;
 }
 
 /*GENERIC SECTION STYLING*/
@@ -103,16 +77,9 @@ section {
 	text-align: justify;
     text-justify: inter-word;
 	width: 100%!important;
-	height: 100vh!important;
+	min-height: 100vh;
 }
 
-section h1 {
-	font-size: 5vh!important;
-}
-
-section p {
-	font-size: 2.5vh!important;
-}
 
 section#about{
 /*	padding-top: 35px!important;*/
@@ -131,10 +98,7 @@ section#contact {
 	background: grey;
 }
 
-/*ABOUT SECTION STYLING*/
-#profile-symbols {
-	width: 15vw!important;
-}
+
 
 /*SKILLS SECTION STYLING*/
 
@@ -179,3 +143,48 @@ textarea:focus, input:focus {
 .form-control:focus {
 	box-shadow: none!important;
 }
+
+/*MEDIA QUERIES*/
+@media (min-width: 320px) and (max-width: 1023px){
+	#about img {
+		display: none!important;
+	}
+
+	.navbar-toggler {
+		z-index: 99999!important;
+	}
+
+	.mobileMenu {
+		position: fixed!important;
+		top: 0!important;
+		bottom: 0!important;
+		left: 0!important;
+		margin: auto!important;
+		transform: translatex(-100%)!important;
+		transition: all ease 0.5s!important;
+	}
+
+	.openMenu {
+		background: black!important;
+		transition: all ease 0.5s!important;
+        transform: translatex(0)!important;
+    }
+
+	#profile-symbols {
+		width: 90vw!important;
+		text-align: center;
+	}
+
+	section {
+		padding-top: 85px!important;
+	}
+
+	section h1 {
+		font-size: 7vw!important;
+	}
+	section p {
+    	font-size: 4vw!important;
+    }
+
+}
+
