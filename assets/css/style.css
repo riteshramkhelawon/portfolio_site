@@ -115,25 +115,21 @@ section p {
 }
 
 
-section#home{
-	padding-top: 35px!important;
+section#about{
+/*	padding-top: 35px!important;*/
 	background: black;
 }
 
-section#about{
-	background: grey;
-}
-
-section#resume {
-  background: black;
-}
-
-section#work {
+section#skills {
   background: grey;
 }
 
+section#work {
+  background: black;
+}
+
 section#contact {
-	background: black;
+	background: grey;
 }
 
 /*section#home{
