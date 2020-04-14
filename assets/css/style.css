@@ -11,6 +11,18 @@ body {
 	height: 100vh!important;
 	/*overflow: hidden!important;*/
 }
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;
+  background-color: grey;
+  height: 1px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 ul {
 	list-style: none;
 }
