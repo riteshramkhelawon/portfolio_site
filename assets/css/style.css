@@ -157,6 +157,98 @@ textarea:focus, input:focus {
 	box-shadow: none!important;
 }
 
+/* Project section styling */
+.project-container{
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.projectwork {
+      position: relative;
+      width: 90%;
+      max-width: 400px;
+      margin: auto;
+      overflow: hidden;
+}
+
+.project-container h2 {
+	color: #646464;
+}
+
+
+.projectwork .projectwork-overlay{
+	background: rgba(0,0,0,0.7);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+.projectwork:hover .projectwork-overlay{
+  opacity: 1;
+}
+
+.projectwork-image{
+  width: 100%;
+}
+
+.projectwork-details{
+	  position: absolute;
+	  text-align: center;
+	  padding-left: 1em;
+	  padding-right: 1em;
+	  width: 100%;
+	  top: 50%;
+	  left: 50%;
+	  opacity: 0;
+	  -webkit-transform: translate(-50%, -50%);
+	  -moz-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	  -webkit-transition: all 0.3s ease-in-out 0s;
+	  -moz-transition: all 0.3s ease-in-out 0s;
+	  transition: all 0.3s ease-in-out 0s;
+}
+
+.projectwork:hover .projectwork-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.projectwork-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+.project-link {
+	margin-right: 1rem!important;
+}
+
+.projectwork-details a:hover {
+	text-decoration: none!important;
+	font-size-adjust: 20px!important;
+}
+
+.project-title {
+	margin-top: 0.75rem;
+	color: white;
+	text-align: center;
+}
+
+
+/*****************************/
+
 /*MEDIA QUERIES*/
 @media (min-width: 320px) and (max-width: 1023px){
 	#about img {
