@@ -5,6 +5,18 @@ $(document).ready(function(){
 	});
 })
 
+//hide menu when user clicks outside of menu
+$(document).mouseup(function(e)
+{
+    var container = $("#myNavbar");
+
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!container.is(e.target) && container.has(e.target).length === 0)
+    {
+        $('#navbarNav').removeClass('openMenu');
+    }
+});
+
 
 // Add scrollspy to <body>
 $('body').scrollspy({target: ".navbar", offset: 50});
