@@ -9,7 +9,6 @@ body {
 	color: white!important;
 	line-height: 1.6!important;
 	height: 100vh!important;
-	/*overflow: hidden!important;*/
 }
 
 hr {
@@ -45,10 +44,11 @@ section p {
 	font-size: 2.5vh!important;
 }
 
-/*.container {
-	width: 100vw!important;
-	height: 100vh!important;
+/*
+.container {
+	scroll-snap-type: y mandatory;
 }*/
+
 
 /*NAVBAR STYLING*/
 .navbar {
