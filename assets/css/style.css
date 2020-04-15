@@ -4,7 +4,6 @@
 }
 
 body {
-	/*font-family: Arial, Helvetica, sans-serif!important;*/
 	font-family: 'Poppins', sans-serif;
 	background: black!important;
 	color: white!important;
@@ -31,6 +30,16 @@ ul {
 	font-weight: none;
 }
 
+.section-odd {
+	color: #515151!important;
+	background-color: white!important;
+}
+
+.section-even {
+	color: black!important;
+	background-color: #d9d9d9!important;
+}
+
 section h1 {
 	text-transform: uppercase;
 	font-size: 5vh!important;
@@ -44,11 +53,6 @@ section h2 {
 section p {
 	font-size: 2.5vh!important;
 }
-
-/*
-.container {
-	scroll-snap-type: y mandatory;
-}*/
 
 
 /*NAVBAR STYLING*/
@@ -92,6 +96,7 @@ transition: color 0.75s ease;
 
 /*GENERIC SECTION STYLING*/
 section {
+/*color: black!important;*/
 	padding-right: 5vw;
     padding-left: 5vw;
     margin-right: auto;
@@ -108,20 +113,44 @@ section {
 
 
 section#about{
+
 /*	padding-top: 35px!important;*/
-	background: black;
+
+/*	clip-path: polygon(0 0,100% 0, 100% 90%, 0 100%);*/
 }
 
 section#skills {
-  background: grey;
+
 }
 
 section#work {
-  background: black;
+
 }
 
 section#contact {
-	background: grey;
+
+}
+
+/*ABOUT SECTION STYLING*/
+#socialmedialinks a {
+	transition: color 0.75s ease!important;
+    color: grey!important;
+}
+
+#fb-icon a:hover{
+    transition: color 0.75s ease!important;
+	color: #3b5998!important;
+}
+
+#linkedIn-icon a:hover{
+    transition: color 0.75s ease!important;
+	color: #0e76a8!important;
+
+}
+
+#github-icon a:hover{
+    transition: color 0.75s ease!important;
+	color: black!important;
 }
 
 
@@ -134,7 +163,7 @@ section#contact {
 
 /*CONTACT SECTION STYLING*/
 #contact-form label {
-	color: white;
+	/*color: white;*/
 	background: transparent;
 }
 
@@ -147,7 +176,7 @@ section#contact {
 }
 
 ::placeholder {
-	color: white!important;
+	/*color: white!important;*/
 	opacity: 0.7!important;
 }
 
@@ -159,11 +188,11 @@ section#contact {
 }
 
 #contact-form input, select, textarea{
-    color: white!important;
+    /*color: white!important;*/
 }
 
 textarea:focus, input:focus {
-    color: white!important;
+ /*   color: white!important;*/
 }
 
 .form-control:focus {
@@ -172,7 +201,7 @@ textarea:focus, input:focus {
 
 /* Project section styling */
 .project-container{
-  color: #1a1a1a;
+/*  color: #1a1a1a;*/
   margin-bottom: 10px;
 }
 
@@ -185,7 +214,7 @@ textarea:focus, input:focus {
 }
 
 .project-container h2 {
-	color: #646464;
+	/*color: #646464;*/
 }
 
 
@@ -236,7 +265,7 @@ textarea:focus, input:focus {
 }
 
 .projectwork-details p{
-  color: #fff;
+  /*color: #fff;*/
   font-size: 0.8em;
 }
 
@@ -255,7 +284,7 @@ textarea:focus, input:focus {
 
 .project-title {
 	margin-top: 0.75rem;
-	color: white;
+	/*color: white;*/
 	text-align: center;
 }
 
