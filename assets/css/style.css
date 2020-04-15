@@ -57,9 +57,10 @@ section p {
 
 /*NAVBAR STYLING*/
 .navbar {
+
 	z-index: 1!important;
 	height: 60px!important;
-	background-color: rgba(0,0,0,1)!important;
+	background-color: #61615f!important;
 }
 
 .navbar-nav.navbar-center {
@@ -321,7 +322,7 @@ textarea:focus, input:focus {
 	}
 
 	.openMenu {
-		background: black!important;
+		background: #61615f!important;
 		transition: all ease 0.5s!important;
         transform: translatex(0)!important;
     }
