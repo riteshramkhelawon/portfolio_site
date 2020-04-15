@@ -288,6 +288,10 @@ textarea:focus, input:focus {
 	text-align: center;
 }
 
+.project-text {
+	color: white!important;
+}
+
 
 /*****************************/
 
