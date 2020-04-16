@@ -241,8 +241,8 @@
 
             <!-- WORK -->
             <section class="section-odd" id="work">
-                <h1 class="mb-2 mb-lg-5">EXAMPLE WORK</h1>
-                <div class="row justify-content-center">
+                <h1 class="work-heading mb-2 mb-lg-5">EXAMPLE WORK</h1>
+                <div class="row project-title justify-content-center">
                     <div class="col-lg-3 m-2">
                         <div class="project-container">
                             <div class="projectwork">
@@ -297,33 +297,35 @@
             </section>
             <!-- CONTACT -->
             <section class="section-even" id="contact">
-                <h1>GET IN TOUCH</h1>
-                <p class="text-center w-responsive mx-auto mb-2">Have any questions? Please do not hesitate to contact me
+                <h1 class="contact-heading">GET IN TOUCH</h1>
+                <p class="contact-text text-center w-responsive mx-auto mb-2">Have any questions? Please do not hesitate
+                    to
+                    contact me
                     directly. I'll get back to you ASAP!</p>
                 <form class="mt-2 mt-lg-5 container form-group" id="contact-form" action="https://formspree.io/xpzjwpor"
                       method="POST">
                     <div class="container row pr-0">
-                        <div class="col-lg-6">
+                        <div class="contact-name col-lg-6">
                             <label class="form-control border-0"  for="name"><strong>Your name:</strong></label>
                             <input class="form-control" type="text" id="name" name="name" placeholder="Enter your name" required />
                         </div>
-                        <div class="col-lg-6 pr-0">
+                        <div class="contact-email col-lg-6 pr-0">
                             <label class="form-control border-0"  for="email"><strong>Your e-mail address:</strong></label>
                             <input class="form-control" type="email" id="email" name="email" placeholder="Enter your email address" required />
                         </div>
                     </div>
                     <br>
-                    <div class="container">
+                    <div class="contact-subject container">
                         <label class="form-control border-0"  for="subject"><strong>Subject:</strong></label>
                         <input class="form-control" type="text" id="subject" name="subject" placeholder="Enter the subject of your message" required />
                     </div>
                     <br>
-                    <div class="container">
+                    <div class="contact-message container">
                         <label class="form-control border-0"  for="message"><strong>Message:</strong></label>
                         <textarea class="container form-control" type="text" id="message" name="message" rows="2" placeholder="Enter your message" required></textarea>
                         <br>
                     </div>
-                    <div class="text-center">
+                    <div class="contact-send-btn text-center">
                         <button class="btn btn-success" id="send-message-btn">Send Message</button>
                     </div>
                     <div id="my-form-status" style="display: none;" role="alert"></div>
@@ -399,13 +401,14 @@
 
         //ABOUT SECTION
         sr.reveal('#profile-pic', {
-            duration: 2000,
+            duration: 3000,
             origin: 'top',
             distance: '100px'
         });
         sr.reveal('.profile-basic-info', {
             duration: 3000,
             origin: 'bottom',
+            distance: '50px'
         });
         sr.reveal('#profile-text', {
             duration: 4000,
@@ -420,14 +423,14 @@
         });
         sr.reveal('#socialmedialinks', {
             duration: 2000,
-            delay: 1000,
+            delay: 550,
             origin: 'bottom',
             distance: '50px'
         });
 
         //SKILLS SECTION
         sr.reveal('.skills-heading', {
-            duration: 2000,
+            duration: 3000,
             origin: 'bottom',
             distance: '50px'
         });
@@ -438,30 +441,94 @@
         });
         sr.reveal('.frontEnd', {
             duration: 2000,
+            delay: 200,
             origin: 'bottom',
             distance: '100px'
         });
         sr.reveal('.backEnd', {
             duration: 2000,
+            delay: 200,
             origin: 'bottom',
             distance: '100px'
         });
         sr.reveal('.otherTools', {
             duration: 2000,
+            delay: 200,
             origin: 'bottom',
             distance: '100px'
         });
         sr.reveal('.skills-hr', {
             duration: 2000,
-            delay: 500,
+            delay: 350,
             origin: 'bottom',
             distance: '100px'
         });
         sr.reveal('.downloadCV', {
             duration: 2000,
-            delay: 1000,
+            delay: 400,
             origin: 'bottom',
             distance: '100px'
+        });
+
+        //WORK SECTION
+        sr.reveal('.work-heading', {
+            duration: 3000,
+            origin: 'bottom',
+            distance: '50px'
+        });
+        sr.reveal('.projectwork', {
+            duration: 2000,
+            delay: 200,
+            origin: 'bottom',
+            distance: '100px'
+        });
+        sr.reveal('.project-title', {
+            duration: 2000,
+            delay: 500,
+            origin: 'bottom',
+            distance: '100px'
+        });
+
+        //CONTACT SECTION
+        sr.reveal('.contact-heading', {
+            duration: 3000,
+            origin: 'bottom',
+            distance: '50px'
+        });
+        sr.reveal('.contact-text', {
+            duration: 2000,
+            delay: 200,
+            origin: 'bottom',
+            distance: '100px'
+        });
+        sr.reveal('.contact-name', {
+            duration: 2000,
+            delay: 200,
+            origin: 'bottom',
+            distance: '100px'
+        });
+        sr.reveal('.contact-email', {
+            duration: 2000,
+            delay: 250,
+            origin: 'bottom',
+            distance: '100px'
+        });
+        sr.reveal('.contact-subject', {
+            duration: 2000,
+            delay: 300,
+            origin: 'bottom',
+            distance: '100px'
+        });
+        sr.reveal('.contact-message', {
+            duration: 2000,
+            delay: 350,
+            origin: 'bottom',
+            distance: '100px'
+        });
+        sr.reveal('.contact-send-btn', {
+            duration: 3000,
+            delay: 750,
+            origin: 'bottom',
         });
     </script>
 </body>
