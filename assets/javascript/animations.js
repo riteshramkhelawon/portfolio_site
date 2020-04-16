@@ -83,6 +83,11 @@
             origin: 'bottom',
             distance: '50px'
         });
+        sr.reveal('.work-text', {
+            duration: 2500,
+            origin: 'bottom',
+            distance: '50px'
+        });
         sr.reveal('.projectwork', {
             duration: 2000,
             delay: 200,
