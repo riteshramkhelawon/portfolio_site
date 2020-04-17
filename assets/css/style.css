@@ -97,7 +97,7 @@ transition: color 0.75s ease;
 
 /*GENERIC SECTION STYLING*/
 section {
-	padding-top: 55px!important;
+	padding-top: 55px;
 	padding-right: 5vw;
     padding-left: 5vw;
     margin-right: auto;
@@ -281,8 +281,8 @@ footer {
 
 /*MEDIA QUERIES*/
 @media (min-width: 320px) and (max-width: 1023px){
-	#about img {
-		display: none!important;
+	#about {
+		padding-top: 40px!important;
 	}
 
 	#skills .container {
